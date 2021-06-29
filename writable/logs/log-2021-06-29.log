@@ -1,0 +1,66 @@
+CRITICAL - 2021-06-29 04:09:14 --> Undefined offset: 0
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Api\Conteneurs.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\Users\\nicol\\...', 18, Array)
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Api\Conteneurs->show('65000')
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Conteneurs))
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-29 07:02:14 --> syntax error, unexpected ':'
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\nicol\\...')
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(888): class_exists('\\App\\Controller...', true)
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(424): CodeIgniter\CodeIgniter->startController()
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-29 07:02:22 --> syntax error, unexpected ':'
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\nicol\\...')
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(888): class_exists('\\App\\Controller...', true)
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(424): CodeIgniter\CodeIgniter->startController()
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-29 07:02:27 --> syntax error, unexpected ':'
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\nicol\\...')
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(888): class_exists('\\App\\Controller...', true)
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(424): CodeIgniter\CodeIgniter->startController()
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-29 07:42:05 --> Allowed fields must be specified for model: App\Models\Mconteneur
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\BaseModel.php(1205): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Mcon...')
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\BaseModel.php(890): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Model.php(718): CodeIgniter\BaseModel->update(NULL, Array)
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Models\Mconteneur.php(58): CodeIgniter\Model->update()
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Api\Conteneurs.php(48): App\Models\Mconteneur->updateConteneur('52', Array)
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Api\Conteneurs->update('52')
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Conteneurs))
+#7 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-29 07:42:54 --> Allowed fields must be specified for model: App\Models\Mconteneur
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\BaseModel.php(1205): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Mcon...')
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\BaseModel.php(890): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Model.php(718): CodeIgniter\BaseModel->update(NULL, Array)
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Models\Mconteneur.php(58): CodeIgniter\Model->update()
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Api\Conteneurs.php(48): App\Models\Mconteneur->updateConteneur('52', Array)
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Api\Conteneurs->update('52')
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Conteneurs))
+#7 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-29 08:39:58 --> syntax error, unexpected 'public' (T_PUBLIC)
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('Api/Conteneurs')
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(812): CodeIgniter\Router\Router->handle('Api/Conteneurs')
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(392): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}

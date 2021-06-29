@@ -1,0 +1,539 @@
+/* Sélectionne l'élément racine du document */
+/* Pour un document HTML, c'est <html> */
+html {
+  /* --main-blue-color: rgb(0, 165, 171);
+  --main-pink-color: rgb(226, 1, 107); */
+  --main-text-color: #444444;
+  --main-a-color: #0071bc;
+  --h1-text-color: rgb(226, 1, 107);
+  --h2-text-color: rgb(226, 1, 107);
+  --h3-text-color: rgb(226, 1, 107);
+  --header-bg-color: white;
+  --header-logo-text-color: rgb(226, 1, 107);
+  --header-text-color: rgb(0, 165, 171);
+  --footer-bg-color: rgb(0, 165, 171);
+  --footer-text-color: white;
+
+  --nav-bg-color: white;
+  --nav-bg-active-color: white;
+  --nav-text-color: rgb(0, 165, 171, 1);
+  --nav-text-hover-color: rgb(226, 1, 107);
+  --nav-text-active-color: rgb(0, 165, 171, 1);
+
+  --nav-toggle-bg-color: rgb(0, 165, 171, 1);
+  --nav-toggle-bg-active-color: var(--nav-toggle-bg-color);
+  --nav-toggle-text-color: white;
+  --nav-toggle-text-hover-color: var(--nav-toggle-text-color);
+  --nav-toggle-text-active-color: var(--nav-toggle-text-color);
+
+  --gallery-item-border-color: #dedede;
+}
+
+/****************************************************
+**     Styles globaux et pour largeur < 768px                        **
+****************************************************/
+
+/*********** Fixer le style global ******************/
+html {
+  font-size: 0.625rem;
+}
+
+body {
+  font-size: 1.6rem;
+  color: var(--main-text-color);
+  font-family: "Segoe UI", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*********** Grille globale ******************/
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  /* pour 100vh sur chrome mobile (cf code JS dans index.html) */
+  min-height: calc(var(--vh, 1vh) * 100);
+}
+
+/*********** Header ******************/
+.header-wrapper {
+
+  /*center le header  dans le viewport horizontal*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0rem;
+  padding-right: 0rem;
+  align-items: center;
+}
+
+.main-header {
+  background-color: var(--header-bg-color);
+  /* pour placer le menu en absolu */
+  position: relative;
+  /* fixer la largeur maxi du contenu (1170p + 30px de marge = 1200px) */
+  width: 100%;
+  max-width: 120rem;
+  border-bottom: var(--header-text-color) solid 1px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/*********** Logo ******************/
+.header-logo {
+  display: inline-block;
+  font-size: 2rem;
+  line-height: 2rem;
+  height: fit-content;
+  color: var(--header-logo-text-color);
+  text-decoration: none;
+  padding-bottom: 1.5rem;
+  padding-left: 14rem;
+  padding-top: 0.4rem;
+  font-weight: bold;
+  /* placement du logo */
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+  margin-right: 0.5rem;
+  background: url("img/logoLeRelais.png");
+  background-size: 13rem 2.4rem;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+/*********** NAV Toggle button ******************/
+/* Toggle button HTML/CSS https://code.visualstudio.com/docs */
+.nav-toggle-button {
+  float: right;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 3.2rem;
+  width: 4.2rem;
+  margin: 1.2rem 1.5rem 0.8rem 0;
+  padding: 0.9rem 1rem;
+  cursor: pointer;
+  line-height: 2rem;
+}
+
+.nav-toggle-button>span {
+  background-color: var(--nav-text-color);
+  display: block;
+  width: 2.2rem;
+  height: 0.2rem;
+  padding: 0;
+  border-radius: 0.1rem;
+}
+
+#nav-toggle,
+.nav-toogle-text {
+  display: none;
+}
+
+#nav-toggle:checked+nav ul {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+/*********** Menu principal <768px ******************/
+.main-nav ul {
+  display: none;
+  list-style-type: none;
+  /* pour ne pas pousser le conteneu et apparaitre au dessus */
+  position: absolute;
+  z-index: 99;
+  background-color: var(--nav-toggle-bg-color);
+  /*position du menu toggle aligné sur left/right de .main-header + 1.5rem de padding de .header-wrapper */
+  right: 0rem;
+  left: 0rem;
+  clear: both;
+  margin: 0;
+  padding: 1.5rem;
+  /* le bas du menu toogle ne dépasse pas 70% du vh */
+  box-sizing: border-box;
+  max-height: calc(70vh - 5rem);
+  /* scroll sur le menu toogle s'il n'est pas assez grand pour afficher tous les items*/
+  overflow-y: auto;
+}
+
+.main-nav ul li a {
+  color: var(--nav-toggle-text-color);
+  text-decoration: none;
+  display: block;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 500;
+}
+
+.main-nav ul li a:hover {
+  color: var(--nav-toggle-text-hover-color);
+  /* opacity: 1; */
+  background-color: var(--nav-toggle-bg-active-color);
+  font-weight: bold;
+}
+
+.main-nav ul li.active a {
+  color: var(--nav-toggle-text-active-color);
+  background-color: var(--nav-toggle-bg-active-color);
+  font-weight: bold;
+}
+
+/*********** Image bandeau ******************/
+.header-img {
+
+  background: url("img/bandeau3.jpg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+
+  border-bottom: var(--header-text-color) solid 0.7rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+
+  display: block;
+  width: 100%;
+  max-width: 120rem;
+  aspect-ratio: auto 1200 / 203;
+}
+
+/*********** Article principal ******************/
+.article-wrapper {
+  /*center l'article dans le viewport horizontal*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+}
+.article-wrapper>*:first-child {
+  /* pour le debug de codeigniter */
+  width: 100%;
+  max-width: 117rem;
+}
+
+.main-article {
+  /* fixer la largeur maxi du contenu (1170p + 30px de marge = 1200px) */
+  width: 100%;
+  max-width: 117rem;
+  /* Texte de l'article */
+  text-align: justify;
+  color: var(--main-text-color);
+}
+
+.main-article img {
+  width: 100%;
+  max-width: 55rem;
+  display: block;
+  margin: auto;
+  /* border: 1px solid var(--main-text-color); */
+  border: 1px solid var(--header-bg-color);
+}
+
+.main-article a {
+  text-decoration: none;
+  color: var(--main-a-color);
+  /* margin-top: 48px; */
+}
+
+.main-article p {
+  font-weight: normal;
+}
+
+/* Pour largeur < 768px */
+.main-article h1 {
+  font-size: 2.55rem;
+  color: var(--h1-text-color);
+  font-weight: 600;
+  text-align: start;
+}
+
+.main-article p:first-of-type strong{
+  font-size: 1.7rem;
+  color: var(--nav-text-color);
+  font-weight: 500;
+  font-style: italic;
+}
+
+.main-article h2 {
+  font-size: 1.87rem;
+  color: var(--h2-text-color);
+  font-weight: 600;
+  text-align: start;
+}
+
+.main-article h3 {
+  font-size: 1.7rem;
+  font-style: italic;
+  color: var(--h3-text-color);
+  font-weight: 500;
+  text-align: start;
+}
+
+.main-article p {
+  font-size: 1.6rem;
+  color: var(--main-text-color);
+}
+
+/*********** liste items ******************/
+.list-items {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/*********** pagination links ******************/
+.pagination {
+  list-style-type: none;
+  /* margin: 0; */
+  padding-left: 0rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.pagination li a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: var(--main-text-color);
+  border-radius: 1rem;
+}
+
+.pagination .active a {
+  color: var(--nav-bg-color);
+  background-color: var(--nav-text-hover-color);
+}
+
+.pagination .pager-next-previous {
+  border: var(--nav-text-color) solid 0.1rem;
+}
+
+/*********** gallery-items ******************/
+.gallery-items {
+  /* font-size: 1.6rem; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  grid-gap: 2rem;
+  clear: both;
+}
+
+.gallery-item-card {
+  border: var(--gallery-item-border-color) solid 1px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  padding: 1.6rem;
+}
+
+.gallery-item-card img {
+  border: none;
+  max-width: 50%;
+  aspect-ratio: auto 128 / 128;
+  display: block;
+  margin: auto;
+}
+
+.gallery-item-card h3 {
+  font-size: 1.4rem;
+  text-align: start;
+}
+
+.gallery-item-card p {
+  font-size: 1.2rem;
+  text-align: start;
+}
+
+/*********** Footer ******************/
+
+.footer-wrapper {
+  /*center le footer dans le viewport horizontal*/
+  display: flex;
+  justify-content: center;
+  padding: 0rem;
+}
+
+.main-footer {
+  background-color: var(--footer-bg-color);
+  /* fixer la largeur maxi du contenu (1170p + 30px de marge = 1200px) */
+  width: 100%;
+  max-width: 1170px;
+  padding: 1.5rem;
+}
+
+.footer-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.footer-links a {
+  color: var(--footer-text-color);
+  /* opacity: 0.6; */
+  text-decoration: none;
+  padding-right: 1.5rem;
+}
+
+/****************************************************
+  **     Pour largeur > 768px                        **
+  ****************************************************/
+
+@media screen and (min-width: 768px) {
+
+  /********* effacer le nav-toggle-button ******************/
+  .navbar-toggle,
+  .nav-toggle-button {
+    display: none;
+  }
+
+  /********* afficher le menu à droite du logo ******************/
+  .main-header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    box-shadow: none;
+  }
+
+  .main-nav {
+    /* le menu prend toute la largeur dispo 
+              dans le header (après le logo)*/
+    flex: 1;
+  }
+
+  /* .header-wrapper {
+    align-items: center;
+    flex-direction: column;
+  } */
+
+  /* .header-img {
+
+    background: url("img/bandeau2.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+
+    border-bottom: var(--header-text-color) solid 1px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+
+    display: block;
+    width: 100%;
+    max-width: 120rem;
+    aspect-ratio: auto 1200 / 157;
+  } */
+
+  /********* menu normal en ligne ******************/
+  .main-nav ul {
+    /* retirer la position absolue */
+    position: static;
+    /* disposition des li en ligne */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    /*même couleur de fond que le header */
+    background-color: var(--nav-bg-color);
+    /* positionnement du texte dans le header */
+    padding: 0;
+  }
+
+  .main-nav ul li a {
+    /* opacity: 0.6; */
+    line-height: 2rem;
+    margin-top: 1.0rem;
+    padding: 1rem 1rem 1rem 1rem;
+    color: var(--nav-text-color);
+  }
+
+  .main-nav ul li a:hover {
+    /* opacity: 0.6; */
+    color: var(--nav-text-hover-color);
+    background-color: var(--nav-bg-active-color);
+    font-weight: 500;
+  }
+
+  .main-nav ul li.active a {
+    color: var(--nav-text-active-color);
+    background-color: var(--nav-bg-active-color);
+    font-weight: bold;
+  }
+
+  /********* si le menu toggle est ouvert ******************/
+  #nav-toggle:checked+nav ul {
+    flex-flow: row wrap;
+  }
+
+  /********* Font-size du texte ******************/
+  .main-article {
+    /* arrêter le float entre chaque article */
+    display: flow-root;
+  }
+  .main-article h1 {
+    font-size: 2.8rem;
+  }
+
+  .main-article p:first-of-type {
+    font-size: 1.87rem;
+  }
+
+  .main-article h2 {
+    font-size: 2.5rem;
+  }
+
+  .main-article h3 {
+    font-size: 1.87rem;
+  }
+
+  .main-article p {
+    font-size: 1.6rem;
+  }
+
+  /********* Image article *********************/
+  .main-article img {
+    width: 40%;
+    max-width: 75rem;
+    display: block;
+    border: 1px solid var(--header-bg-color);
+    margin: 0 1.5rem 0.5rem 0;
+    display: flow-root;
+    float: left;
+  }
+}
+
+/****************************************************
+  **     Pour largeur > 992px                        **
+  ****************************************************/
+@media screen and (min-width: 992px) {
+
+  /********* Font-size du texte ******************/
+  .main-article h1 {
+    font-size: 3rem;
+  }
+
+  .main-article h2 {
+    font-size: 2.7rem;
+  }
+
+  .main-article p {
+    font-size: 1.6rem;
+  }
+}
+
+/****************************************************
+  **     Pour largeur > 1200px                       **
+  ****************************************************/
+@media screen and (min-width: 1200px) {
+
+  /********* Font-size du texte ******************/
+  .main-article h1 {
+    font-size: 2.8rem;
+  }
+
+  .main-article h2 {
+    font-size: 2.7rem;
+  }
+
+  .main-article p {
+    font-size: 1.6rem;
+  }
+}

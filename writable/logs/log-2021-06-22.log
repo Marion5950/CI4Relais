@@ -1,0 +1,431 @@
+CRITICAL - 2021-06-22 02:54:02 --> syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('Cconteneur/sear...')
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(812): CodeIgniter\Router\Router->handle('Cconteneur/sear...')
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(392): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-22 02:56:55 --> Undefined variable: search_string
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Cconteneur.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\nicol\\...', 50, Array)
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Cconteneur->search()
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cconteneur))
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-22 02:57:55 --> Call to undefined method App\Models\Mconteneur::getSearchWithPager
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Cconteneur.php(50): CodeIgniter\Model->__call('getSearchWithPa...', Array)
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Cconteneur->search()
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cconteneur))
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-22 03:05:49 --> count(): Parameter must be an array or an object that implements Countable
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Views\Conteneurs\v_liste_conteneurs.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\Users\\nicol\\...', 9, Array)
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\Users\\nicol\\...')
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Conteneurs/v_li...', Array, true)
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Cconteneur.php(56): view('Conteneurs/v_li...', Array)
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Cconteneur->search()
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cconteneur))
+#7 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-22 03:14:09 --> syntax error, unexpected '}', expecting ';'
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\nicol\\...')
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Mcon...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Mcon...')
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Cconteneur.php(49): spl_autoload_call('App\\Models\\Mcon...')
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Cconteneur->search()
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cconteneur))
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-22 03:14:12 --> syntax error, unexpected '}', expecting ';'
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\nicol\\...')
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Mcon...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Mcon...')
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Cconteneur.php(49): spl_autoload_call('App\\Models\\Mcon...')
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Cconteneur->search()
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cconteneur))
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-22 03:14:12 --> syntax error, unexpected '}', expecting ';'
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(282): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\nicol\\...')
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Mcon...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Mcon...')
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Cconteneur.php(49): spl_autoload_call('App\\Models\\Mcon...')
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Cconteneur->search()
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cconteneur))
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-22 04:07:10 --> Undefined variable: recherche_vide
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Views\Conteneurs\v_liste_conteneurs.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\nicol\\...', 13, Array)
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\Users\\nicol\\...')
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Conteneurs/v_li...', Array, true)
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Cconteneur.php(63): view('Conteneurs/v_li...', Array)
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Cconteneur->search()
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cconteneur))
+#7 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-22 04:09:55 --> syntax error, unexpected end of file
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Conteneurs/v_li...', Array, true)
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Cconteneur.php(63): view('Conteneurs/v_li...', Array)
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Cconteneur->search()
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cconteneur))
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-06-22 04:12:43 --> syntax error, unexpected end of file
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Conteneurs/v_li...', Array, true)
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Cconteneur.php(63): view('Conteneurs/v_li...', Array)
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Cconteneur->search()
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cconteneur))
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-06-22 04:12:44 --> syntax error, unexpected end of file
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Conteneurs/v_li...', Array, true)
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Cconteneur.php(63): view('Conteneurs/v_li...', Array)
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Cconteneur->search()
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cconteneur))
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-06-22 04:12:47 --> syntax error, unexpected end of file
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Conteneurs/v_li...', Array, true)
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Cconteneur.php(63): view('Conteneurs/v_li...', Array)
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Cconteneur->search()
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cconteneur))
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-06-22 04:12:48 --> syntax error, unexpected end of file
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Conteneurs/v_li...', Array, true)
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Cconteneur.php(63): view('Conteneurs/v_li...', Array)
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Cconteneur->search()
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cconteneur))
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-06-22 04:12:48 --> syntax error, unexpected end of file
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Conteneurs/v_li...', Array, true)
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Cconteneur.php(63): view('Conteneurs/v_li...', Array)
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Cconteneur->search()
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cconteneur))
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-06-22 06:27:02 --> syntax error, unexpected end of file
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Tournees/v_list...', Array, true)
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Ctournee.php(22): view('Tournees/v_list...', Array)
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Ctournee->index()
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ctournee))
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-06-22 06:29:10 --> syntax error, unexpected end of file
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Tournees/v_list...', Array, true)
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Ctournee.php(22): view('Tournees/v_list...', Array)
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Ctournee->index()
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ctournee))
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-06-22 06:29:15 --> syntax error, unexpected end of file
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Tournees/v_list...', Array, true)
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Ctournee.php(22): view('Tournees/v_list...', Array)
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Ctournee->index()
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ctournee))
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-06-22 06:35:39 --> Undefined index: AddrEmplacement
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Views\Tournees\v_liste_tournees.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\Users\\nicol\\...', 13, Array)
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\Users\\nicol\\...')
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Tournees/v_list...', Array, true)
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Ctournee.php(22): view('Tournees/v_list...', Array)
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Ctournee->index()
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ctournee))
+#7 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-22 06:40:27 --> Call to a member function getDetails() on null
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(230): include()
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Tournees/v_list...', Array, true)
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Ctournee.php(22): view('Tournees/v_list...', Array)
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Ctournee->index()
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ctournee))
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-22 06:43:11 --> syntax error, unexpected end of file
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Tournees/v_list...', Array, true)
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Ctournee.php(22): view('Tournees/v_list...', Array)
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Ctournee->index()
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ctournee))
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-06-22 06:43:36 --> Call to a member function getDetails() on null
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(230): include()
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Tournees/v_list...', Array, true)
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Ctournee.php(22): view('Tournees/v_list...', Array)
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Ctournee->index()
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ctournee))
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-22 06:43:38 --> Call to a member function getDetails() on null
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(230): include()
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Tournees/v_list...', Array, true)
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Ctournee.php(22): view('Tournees/v_list...', Array)
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Ctournee->index()
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ctournee))
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-22 06:43:43 --> Call to a member function getDetails() on null
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(230): include()
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Tournees/v_list...', Array, true)
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Ctournee.php(22): view('Tournees/v_list...', Array)
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Ctournee->index()
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ctournee))
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-22 06:44:42 --> Call to a member function getDetails() on null
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(230): include()
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Tournees/v_list...', Array, true)
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Ctournee.php(22): view('Tournees/v_list...', Array)
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Ctournee->index()
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ctournee))
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-22 06:45:59 --> Call to a member function getDetails() on null
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(230): include()
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Tournees/v_list...', Array, true)
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Ctournee.php(22): view('Tournees/v_list...', Array)
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Ctournee->index()
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ctournee))
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-22 06:57:10 --> Undefined index: latLng
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Views\Conteneurs\v_detail_conteneur.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\Users\\nicol\\...', 5, Array)
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\Users\\nicol\\...')
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Conteneurs/v_de...', Array, true)
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Cconteneur.php(35): view('Conteneurs/v_de...', Array)
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Cconteneur->detail('1')
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cconteneur))
+#7 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-22 06:57:23 --> Undefined offset: 1
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Views\Conteneurs\v_detail_conteneur.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\Users\\nicol\\...', 5, Array)
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\Users\\nicol\\...')
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Conteneurs/v_de...', Array, true)
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Cconteneur.php(35): view('Conteneurs/v_de...', Array)
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Cconteneur->detail('1')
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cconteneur))
+#7 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-22 06:58:14 --> Undefined index: latLng
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Views\Conteneurs\v_detail_conteneur.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\Users\\nicol\\...', 5, Array)
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\Users\\nicol\\...')
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Conteneurs/v_de...', Array, true)
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Cconteneur.php(35): view('Conteneurs/v_de...', Array)
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Cconteneur->detail('1')
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cconteneur))
+#7 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-22 07:26:03 --> syntax error, unexpected ';', expecting ')'
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Router\Router.php(169): CodeIgniter\Router\Router->autoRoute('Ctournee/index')
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(812): CodeIgniter\Router\Router->handle('Ctournee/index')
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(392): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-22 07:28:52 --> Undefined index: resTournee
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Ctournee.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\Users\\nicol\\...', 33, Array)
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Ctournee->detail('3')
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ctournee))
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-22 07:33:39 --> Undefined index: resTournee
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Ctournee.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\Users\\nicol\\...', 33, Array)
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Ctournee->detail('3')
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ctournee))
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-22 07:34:45 --> Undefined variable: result
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Views\Tournees\v_liste_tournees.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\nicol\\...', 4, Array)
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\Users\\nicol\\...')
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Tournees/v_list...', Array, true)
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Ctournee.php(40): view('Tournees/v_list...', Array)
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Ctournee->detail('3')
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ctournee))
+#7 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-22 07:35:45 --> Undefined index: Nom
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Views\Tournees\v_liste_tournees.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\Users\\nicol\\...', 14, Array)
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\Users\\nicol\\...')
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Tournees/v_list...', Array, true)
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Ctournee.php(40): view('Tournees/v_list...', Array)
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Ctournee->detail('3')
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ctournee))
+#7 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-22 07:38:10 --> Undefined variable: resTournee
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Views\Tournees\v_liste_tournees.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\nicol\\...', 4, Array)
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\Users\\nicol\\...')
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Tournees/v_list...', Array, true)
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Ctournee.php(23): view('Tournees/v_list...', Array)
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Ctournee->index()
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ctournee))
+#7 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-22 07:38:16 --> Undefined variable: resTournee
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Views\Tournees\v_liste_tournees.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\nicol\\...', 4, Array)
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\Users\\nicol\\...')
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Tournees/v_list...', Array, true)
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Ctournee.php(23): view('Tournees/v_list...', Array)
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Ctournee->index()
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ctournee))
+#7 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-22 07:39:19 --> Call to a member function getDetails() on null
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(230): include()
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Tournees/v_list...', Array, true)
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Ctournee.php(23): view('Tournees/v_list...', Array)
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Ctournee->index()
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ctournee))
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-22 07:39:32 --> syntax error, unexpected end of file
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Tournees/v_list...', Array, true)
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Ctournee.php(23): view('Tournees/v_list...', Array)
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Ctournee->index()
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ctournee))
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-06-22 07:39:34 --> syntax error, unexpected end of file
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Tournees/v_list...', Array, true)
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Ctournee.php(40): view('Tournees/v_list...', Array)
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Ctournee->detail('3')
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ctournee))
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-06-22 07:39:56 --> syntax error, unexpected end of file
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Tournees/v_list...', Array, true)
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Ctournee.php(23): view('Tournees/v_list...', Array)
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Ctournee->index()
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ctournee))
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-06-22 07:40:48 --> Call to a member function getDetails() on null
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(230): include()
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Tournees/v_list...', Array, true)
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Ctournee.php(23): view('Tournees/v_list...', Array)
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Ctournee->index()
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ctournee))
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-22 07:41:20 --> Undefined index: AddrEmplacement
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Views\Tournees\v_liste_tournees.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\Users\\nicol\\...', 12, Array)
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\Users\\nicol\\...')
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Tournees/v_list...', Array, true)
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Ctournee.php(23): view('Tournees/v_list...', Array)
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Ctournee->index()
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ctournee))
+#7 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-22 07:41:54 --> Call to a member function links() on null
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(230): include()
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Tournees/v_list...', Array, true)
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Ctournee.php(23): view('Tournees/v_list...', Array)
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Ctournee->index()
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ctournee))
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-22 07:42:13 --> Undefined variable: result
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Views\Tournees\v_liste_tournees.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\nicol\\...', 3, Array)
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\Users\\nicol\\...')
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Tournees/v_list...', Array, true)
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Ctournee.php(40): view('Tournees/v_list...', Array)
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Ctournee->detail('3')
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ctournee))
+#7 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-22 07:43:02 --> Undefined variable: result
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Views\Tournees\v_liste_tournees.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\nicol\\...', 3, Array)
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(230): include('C:\\Users\\nicol\\...')
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Tournees/v_list...', Array, true)
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Ctournee.php(40): view('Tournees/v_list...', Array)
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Ctournee->detail('3')
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ctournee))
+#7 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-22 07:44:49 --> Invalid file: Tournees/v_detail_tournees.php
+#0 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Tournees/v_deta...')
+#1 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\Common.php(1250): CodeIgniter\View\View->render('Tournees/v_deta...', Array, true)
+#2 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\app\Controllers\Ctournee.php(40): view('Tournees/v_deta...', Array)
+#3 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(931): App\Controllers\Ctournee->detail('3')
+#4 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(439): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ctournee))
+#5 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\vendor\codeigniter4\framework\system\CodeIgniter.php(339): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\nicol\Documents\Formation\TPCDA\HTML\Backend\tcpda-clone1\CI4conteneurs\public\index.php(36): CodeIgniter\CodeIgniter->run()
+#7 {main}
